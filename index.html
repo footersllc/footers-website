@@ -5,12 +5,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Footers Industrial Group</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <!-- Header-->
-     <header>
+    <header>
         <nav>
+            <button class="menu-toggle">☰</button>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -19,58 +22,73 @@
             </ul>
         </nav>
         <div class="hero">
-            <img src="images/ship-logo.png" alt="Footers Industrial Group Logo"  class="logo">
+            <img src="images/ship-logo.png" alt="Footers Industrial Group Logo" class="logo">
             <h1>FOOTERS INDUSTRIAL GROUP</h1>
             <h2>MARINE · INDUSTRIAL · ENGINE REPAIR</h2>
             <p><em>Engineering Solutions, Restoring Confidence</em></p>
         </div>
-     </header>
+    </header>
 
+    <!-- About -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            Founded by a licensed USCG Unlimited Engineer with over 5 years of experience
+            in the maritime and industrial repair field, Footers Marine, Industrial, and Engine Repair LLC aka Footers Industrial Group
+            is built on a pure passion for workmanship, reliability, and pride.
+            As a company, we are committed to delivering high-quality service, dependable maintenance,
+            and innovative repair solutions. Our approach to the job emphasizes professionalism,
+            safety, and expertise in every project we undertake.
+        </p>
+    </section>
 
-<!-- About -->
- <section id="about">
-    <h2>About Us</h2>
-    <p>
-        Founded by a licensed USCG Unlimited Engineer with over 5 years of experience
-        in the maritime and industrial repair field, Footers Marine, Industrial, and Engine Repair LLC aka Footers Industrial Group
-        is built on a pure passion for workmanship, reliability, and pride.
-        As a company, we are comitted to delivering high-quality service, dependable maintenance,
-        and innovative repair solutions. Our approach to the job emphasizes professionalism,
-        safety, and expertise in every project we undertake.
-    </p>
- </section>
+    <!-- Services -->
+    <section id="services">
+        <h2>Our Services</h2>
 
- 
- <!-- Services -->
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="service">
-        <h3>Marine</h3>
-        <p>Expert repair and maintenance for vessels in the maritime industry, ensuring reliability, safety, and efficiency for commercial and industrial operations.</p>
-    </div>
-    <div class="service">
-        <h3>Industrial</h3>
-        <p>Comprehensive service for industrial systems and equipment, focused on sustaining uptime, maximizing performance and, supporting heavy-duty applications.</p>
-    </div>
-    <div class="service">
-        <h3>Engine Repair</h3>
-        <p>Full-service engine diagnostics, maintenance, and repair, providing power solutions through precision engineering and skilled labor.</p>
-    </div>
-  </section>
+        <div class="service">
+            <i class="fas fa-ship service-icon"></i>
+            <h3>Marine</h3>
+            <p>Expert repair and maintenance for vessels in the maritime industry, ensuring reliability, safety, and efficiency for commercial and industrial operations.</p>
+        </div>
+        <div class="service">
+            <i class="fas fa-industry service-icon"></i>
+            <h3>Industrial</h3>
+            <p>Comprehensive service for industrial systems and equipment, focused on sustaining uptime, maximizing performance and supporting heavy-duty applications.</p>
+        </div>
+        <div class="service">
+            <i class="fas fa-wrench service-icon"></i>
+            <h3>Engine Repair</h3>
+            <p>Full-service engine diagnostics, maintenance, and repair, providing power solutions through precision engineering and skilled labor.</p>
+        </div>
+    </section>
 
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>(617) 309-7826<br>
+        footersllc@gmail.com</p>
 
-  <!-- Contact -->
-   <section id="contact">
-    <h2>Contact</h2>
-    <p>(617) 309-7826<br>
-    footersllc@gmail.com</p>
+    <form action="https://formspree.io/f/meollpeo" method="POST">
+    <input type="text" name="name" placeholder="Name" required />
+    <input type="email" name="email" placeholder="Email" required />
+    <textarea name="message" placeholder="Message" required></textarea>
 
-    <form>
-        <input type="text" placeholder="Name" required />
-        <input type="email" placeholder="Email" required />
-        <textarea placeholder="Message"></textarea>
-        <button type="submit">Request a Quote</button>
-    </form>
-   </section>
+    <!-- Redirect after submission -->
+    <input type="hidden" name="_redirect" value="https://footersindustrialgroup.com/thank-you.html">
+
+    <button type="submit">Request a Quote</button>
+</form>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p><i class="fas fa-phone"></i> (617) 309-7826</p>
+        <p><i class="fas fa-envelope"></i> footersllc@gmail.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Boston, MA</p>
+        <p>&copy; 2025 Footers Industrial Group LLC. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
