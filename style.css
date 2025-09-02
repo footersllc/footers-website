@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #0a1a33;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero h1 {
+    margin: 1rem 0 0;
+}
+
+section {
+    padding: 2rem;
+}
+
+.service {
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+form input, form textare, form button {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+}
